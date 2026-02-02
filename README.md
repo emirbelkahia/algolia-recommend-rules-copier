@@ -16,20 +16,28 @@ This script facilitates the migration of Algolia Recommend rules from one index/
 - requests library
 
 **Setup**
+
 Install the required Python library:
+```bash
 pip install requests
+```
 
 Configure your API credentials and indices:
+```python
 APPLICATION_ID = 'YourApplicationID'
 API_KEY = 'YourAPIKey'
 SOURCE_INDEX_NAME = 'YourSourceIndexName'
 SOURCE_MODEL_NAME = 'YourSourceModelName'
 TARGET_INDEX_NAME = 'YourTargetIndexName'
 TARGET_MODEL_NAME = 'YourTargetModelName'
+```
 
 **Usage**
+
 Execute the script to begin migration:
+```bash
 python migrate_rules.py
+```
 
 **Process**
 1. Retrieve Rules: Fetch all rules from the specified source.
