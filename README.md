@@ -1,7 +1,15 @@
 **Algolia Rules Migration Script**
 
+> **⚠️ Note:** This functionality is now available natively in the Algolia dashboard (just a few clicks). This script remains useful for **programmatic automation** — scheduled tasks, cron jobs, CI/CD pipelines, or any workflow where you need to migrate Recommend rules automatically without manual intervention.
+
 **Overview**
-This script facilitates the migration of Algolia Recommend rules from one index/model to another. It's designed to retrieve all rules from a source index/model and push them to a target index/model.
+This script facilitates the migration of Algolia Recommend rules from one index/model to another within the same Algolia application. It's designed to retrieve all rules from a source index/model and push them to a target index/model.
+
+**When to use this script:**
+- Automating rule migration in CI/CD pipelines
+- Scheduled synchronization between environments (staging → production)
+- Bulk migrations across multiple indices
+- Integration with deployment workflows
 
 **Requirements**
 - Python 3.x
